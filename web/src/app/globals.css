@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1A2B3D;
+  --color-primary-dark: #111D29;
+  --color-accent: #D4AF37;
+  --color-accent-hover: #b8972e;
+  --color-background: #FDFBF7;
+  --color-surface: #F5F2ED;
+  --color-foreground: #1A2B3D;
+  --color-muted: #64748B;
+  
+  --font-sans: var(--font-inter), sans-serif;
+  --font-heading: var(--font-playfair), serif;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility glass {
+  background-color: rgba(253, 251, 247, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@utility glass-dark {
+  background-color: rgba(26, 43, 61, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: var(--color-primary);
+  }
+}

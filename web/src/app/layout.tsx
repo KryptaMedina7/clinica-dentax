@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${playfair.variable} scroll-smooth`}
     >
-      <body className="min-h-screen bg-background text-foreground font-sans antialiased overflow-x-hidden selection:bg-accent/30 selection:text-primary">
+      <body className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-accent/30 selection:text-primary">
         {children}
       </body>
     </html>

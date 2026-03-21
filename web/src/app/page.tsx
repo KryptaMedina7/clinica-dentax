@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex-1 w-full bg-background relative selection:bg-accent/30 selection:text-primary overflow-x-hidden">
+      <main className="flex-1 w-full bg-background relative selection:bg-accent/30 selection:text-primary">
         <Hero />
         <TrustBlock />
         <About />

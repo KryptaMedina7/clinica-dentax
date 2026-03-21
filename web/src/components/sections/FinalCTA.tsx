@@ -15,20 +15,20 @@ export const FinalCTA = () => {
       <div className="absolute top-0 right-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-accent/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-white/5 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2 pointer-events-none" />
       
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto px-4 items-center">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto px-4 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-5xl font-semibold mb-6 leading-tight text-white">
+          <h2 className="font-heading text-3xl md:text-5xl lg:text-5xl font-semibold mb-6 leading-tight text-white text-balance">
             Excelencia Clínica para una Sonrisa Insuperable
           </h2>
-          <p className="text-white/80 text-lg font-light leading-relaxed mb-10 text-balance">
+          <p className="text-white/80 text-base md:text-lg font-light leading-relaxed mb-8 md:mb-10 text-balance">
             Da el primer paso hacia una salud bucal impecable. Envíanos tus datos y nos pondremos en contacto para agendar tu evaluación diagnóstica en nuestra consulta privada.
           </p>
-          <div className="space-y-4 text-white/80">
+          <div className="space-y-4 text-white/80 text-sm md:text-base">
             <p><strong>Ubicación:</strong> Av. Chacabuco 485, Concepción</p>
             <p><strong>Teléfonos:</strong> +569 5514 1955 / (41) 273 7130</p>
             <p><strong>Email:</strong> dentax2.0@gmail.com</p>
@@ -40,7 +40,7 @@ export const FinalCTA = () => {
            whileInView={{ opacity: 1, x: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
-           className="glass-dark p-8 md:p-10 rounded-2xl shadow-2xl relative"
+           className="glass-dark p-6 md:p-10 rounded-2xl shadow-2xl relative w-full sm:max-w-md mx-auto lg:max-w-none"
         >
            <form action="mailto:dentax2.0@gmail.com" method="post" encType="text/plain" className="space-y-5 flex flex-col items-stretch">
              <div>

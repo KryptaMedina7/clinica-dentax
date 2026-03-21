@@ -24,21 +24,21 @@ export const Hero = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl mx-auto"
         >
-          <span className="inline-block py-1 px-3 mb-6 border border-accent/30 rounded-full text-accent text-xs font-semibold tracking-widest uppercase bg-accent/10 backdrop-blur-sm">
+          <span className="inline-block py-1 px-3 mb-4 md:mb-6 border border-accent/30 rounded-full text-accent text-[10px] md:text-xs font-semibold tracking-widest uppercase bg-accent/10 backdrop-blur-sm">
             Clínica Dentax
           </span>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-tight mb-6">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 md:mb-6">
             Odontología de Alto Estándar en Concepción
           </h1>
-          <p className="text-lg md:text-xl text-white/80 font-light mb-10 max-w-2xl mx-auto leading-relaxed text-balance">
+          <p className="text-base md:text-xl text-white/80 font-light mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed text-balance px-4 md:px-0">
             Atención clínica privada y especializada. Un espacio donde la excelencia médica, la precisión y la confianza convergen para transformar su sonrisa.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0">
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-sm md:text-base" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
               Agendar Evaluación
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto border-white/30 text-white hover:bg-white hover:text-primary" onClick={() => document.getElementById('specialists')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button variant="outline" size="lg" className="w-full sm:w-auto border-white/30 text-white hover:bg-white hover:text-primary text-sm md:text-base" onClick={() => document.getElementById('specialists')?.scrollIntoView({ behavior: 'smooth' })}>
               Conocer Especialistas
             </Button>
           </div>

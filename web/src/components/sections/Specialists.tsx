@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section } from "../ui/Section";
 import { User } from "lucide-react";
@@ -11,24 +11,28 @@ const TEAM = [
     title: "Cirujano Dentista",
     university: "Universidad de Concepción",
     role: "Director Clínico",
+    image: "/doctores/Dr.gonzalo.png",
   },
   {
     name: "Dr. Jorge Maldonado Aguayo",
     title: "Rehabilitación Oral",
     university: "Universidad de Concepción | Especialista UDD",
     role: "TTM, Dolor Orofacial y Rejuvenecimiento Facial",
+    image: "/doctores/Dr.jorge.png",
   },
   {
     name: "Dra. Rosita Urrutia Soto",
     title: "Periodoncia e Implantología",
     university: "Formación UdeC",
     role: "Atención Especializada y Académica",
+    image: "/doctores/Dra.rosita.png",
   },
   {
     name: "Dra. Claudia Klattenhoff Reyes",
     title: "Rehabilitación Oral e Implantología",
     university: "",
     role: "Restauración Integral y Estética",
+    image: "/doctores/Dra.claudia.png",
   },
   {
     name: "Dr. Andrés González Olate",
@@ -75,13 +79,20 @@ export const Specialists = () => {
             transition={{ duration: 0.6, delay: idx * 0.1 }}
             className="group glass rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1 bg-white/60 box-border flex flex-col h-full"
           >
-            {/* Foto Placeholder Elegante */}
-            <div className="w-full aspect-square rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden relative mb-6">
-              <User size={48} className="text-gray-300 transition-transform duration-500 group-hover:scale-110" />
+            {/* Foto u Icono */}
+            <div className="w-full aspect-[4/5] rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden relative mb-6">
+              {member.image ? (
+                <Image
+                  src={member.image}
+                  alt={`Dr. ${member.name.split(' ')[1]}`}
+                  fill
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              ) : (
+                <User size={48} className="text-gray-300 transition-transform duration-500 group-hover:scale-110" />
+              )}
               <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
-              <div className="absolute bottom-2 right-2 text-[10px] text-gray-400 font-mono tracking-widest">
-                [ FOTO OK ]
-              </div>
             </div>
             
             <div className="flex-1 flex flex-col">

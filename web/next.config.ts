@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  webpack: (config) => {
+    config.watchOptions = {
+      ignored: ['**/node_modules/**', '**/public/**', '**/.next/**'],
+    };
+    return config;
+  },
 };
 
 export default nextConfig;

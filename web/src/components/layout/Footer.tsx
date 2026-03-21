@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 export const Footer = () => {
@@ -7,7 +8,15 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
         {/* Brand */}
         <div className="col-span-1 md:col-span-1">
-          <h3 className="font-heading text-2xl font-semibold mb-4 text-accent">Clínica Dentax</h3>
+          <div className="mb-6 -ml-2">
+            <Image 
+              src="/logoDentax.png" 
+              alt="Clínica Dentax Logo" 
+              width={200} 
+              height={40} 
+              className="h-10 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+            />
+          </div>
           <p className="text-white/70 text-sm leading-relaxed max-w-xs">
             Odontología privada de alto estándar en Concepción. Especializados en salud, función y estética dental.
           </p>

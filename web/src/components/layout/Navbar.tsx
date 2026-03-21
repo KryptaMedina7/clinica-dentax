@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
@@ -30,8 +31,15 @@ export const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#hero" className="font-heading text-2xl font-semibold tracking-tight text-primary">
-          Clínica Dentax
+        <a href="#hero" className="flex items-center -ml-2">
+          <Image 
+            src="/logoDentax.png" 
+            alt="Clínica Dentax Logo" 
+            width={180} 
+            height={36} 
+            className="h-8 md:h-10 w-auto object-contain brightness-0"
+            priority
+          />
         </a>
 
         {/* Desktop Nav */}

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
 import { ChevronDown } from "lucide-react";
@@ -24,9 +25,18 @@ export const Hero = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl mx-auto"
         >
-          <span className="inline-block py-1 px-3 mb-4 md:mb-6 border border-accent/30 rounded-full text-accent text-[10px] md:text-xs font-semibold tracking-widest uppercase bg-accent/10 backdrop-blur-sm">
-            Clínica Dentax
-          </span>
+          <div className="flex justify-center mb-6 md:mb-8">
+            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/20 shadow-xl flex items-center justify-center">
+              <Image 
+                src="/logosolodentax.png" 
+                alt="Dentax Isotipo" 
+                width={80} 
+                height={80} 
+                className="w-full h-full object-contain brightness-0 invert opacity-90"
+                priority
+              />
+            </div>
+          </div>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 md:mb-6">
             Odontología de Alto Estándar en Concepción
           </h1>

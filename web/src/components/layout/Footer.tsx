@@ -10,11 +10,11 @@ export const Footer = () => {
         <div className="col-span-1 md:col-span-1">
           <div className="mb-6 -ml-2">
             <Image 
-              src="/logoDentax.png" 
+              src="/doctores/logoclinicatexto.png" 
               alt="Clínica Dentax Logo" 
               width={200} 
-              height={40} 
-              className="h-10 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+              height={133} 
+              className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
             />
           </div>
           <p className="text-white/70 text-sm leading-relaxed max-w-xs">

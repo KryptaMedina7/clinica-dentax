@@ -33,11 +33,11 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#hero" className="flex items-center -ml-2">
           <Image 
-            src="/logoDentax.png" 
+            src="/doctores/logoclinicatexto.png" 
             alt="Clínica Dentax Logo" 
             width={180} 
-            height={36} 
-            className="h-8 md:h-10 w-auto object-contain brightness-0"
+            height={120} 
+            className="h-12 md:h-16 w-auto object-contain"
             priority
           />
         </a>

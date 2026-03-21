@@ -25,14 +25,14 @@ export const Hero = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl mx-auto"
         >
-          <div className="flex justify-center mb-6 md:mb-8">
-            <div className="relative w-16 h-16 md:w-20 md:h-20 bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/20 shadow-xl flex items-center justify-center">
+          <div className="flex justify-center mb-8 md:mb-10">
+            <div className="relative w-28 h-28 md:w-36 md:h-36 bg-white/10 backdrop-blur-md rounded-3xl p-4 md:p-5 border border-white/20 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 duration-300">
               <Image 
-                src="/logosolodentax.png" 
+                src="/doctores/logosolodentax.png" 
                 alt="Dentax Isotipo" 
-                width={80} 
-                height={80} 
-                className="w-full h-full object-contain brightness-0 invert opacity-90"
+                width={120} 
+                height={120} 
+                className="w-full h-full object-contain"
                 priority
               />
             </div>

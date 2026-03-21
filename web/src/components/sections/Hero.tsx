@@ -31,7 +31,7 @@ export const Hero = () => {
               <img 
                 src="/doctores/logosolodentax.png" 
                 alt="Dentax Isotipo" 
-                className="w-full h-full object-contain scale-[1.4] drop-shadow-xl"
+                className="w-full h-full object-contain scale-[1.8] drop-shadow-xl"
               />
             </div>
           </div>

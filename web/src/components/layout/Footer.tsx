@@ -10,11 +10,13 @@ export const Footer = () => {
         <div className="col-span-1 md:col-span-1">
           <div className="mb-6 -ml-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src="/doctores/logoclinicatexto.png" 
-              alt="Clínica Dentax Logo" 
-              className="h-24 md:h-32 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-            />
+            <div className="w-[180px] md:w-[240px] h-20 md:h-28 flex items-center justify-start overflow-visible">
+              <img 
+                src="/doctores/logoclinicatexto.png" 
+                alt="Clínica Dentax Logo" 
+                className="w-full h-full object-contain scale-[1.3] origin-left brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+              />
+            </div>
           </div>
           <p className="text-white/70 text-sm leading-relaxed max-w-xs">
             Odontología privada de alto estándar en Concepción. Especializados en salud, función y estética dental.

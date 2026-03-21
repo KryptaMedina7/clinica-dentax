@@ -32,11 +32,13 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#hero" className="flex items-center -ml-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/doctores/logoclinicatexto.png"
-            alt="Clínica Dentax Logo"
-            className="h-12 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
-          />
+          <div className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] h-12 md:h-16 flex items-center justify-start overflow-visible">
+            <img
+              src="/doctores/logoclinicatexto.png"
+              alt="Clínica Dentax Logo"
+              className="w-full h-full object-contain scale-[1.4] md:scale-[1.6] origin-left"
+            />
+          </div>
         </a>
 
         {/* Desktop Nav */}

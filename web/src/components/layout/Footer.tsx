@@ -13,7 +13,7 @@ export const Footer = () => {
             <img 
               src="/doctores/logoclinicatexto.png" 
               alt="Clínica Dentax Logo" 
-              className="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+              className="h-24 md:h-32 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
             />
           </div>
           <p className="text-white/70 text-sm leading-relaxed max-w-xs">

@@ -26,7 +26,7 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-3 md:py-4 shadow-sm" : "bg-transparent py-4 md:py-6"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-2 md:py-3 shadow-sm" : "bg-transparent py-3 md:py-5"
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -35,7 +35,7 @@ export const Navbar = () => {
           <img
             src="/doctores/logoclinicatexto.png"
             alt="Clínica Dentax Logo"
-            className="h-10 sm:h-14 md:h-20 lg:h-24 w-auto object-contain"
+            className="h-9 sm:h-10 md:h-12 lg:h-14 w-auto object-contain"
           />
         </a>
 

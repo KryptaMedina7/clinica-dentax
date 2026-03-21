@@ -116,12 +116,12 @@ export const Specialists = () => {
 
       {/* Carousel — no touch handlers, scroll works naturally */}
       <div 
-        className="relative z-10 max-w-7xl mx-auto px-4 md:px-12"
+        className="relative z-10 max-w-6xl mx-auto px-4 md:px-16 lg:px-20"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
         {/* Arrow buttons on sides (desktop only) */}
-        <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 -left-2 lg:-left-6 z-20">
+        <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 lg:left-2 z-20">
           <button 
             onClick={prevSlide}
             className="p-3 rounded-full bg-white/90 text-primary shadow-lg border border-black/5 hover:bg-accent hover:text-white transition-all duration-300 hover:scale-110 focus:outline-none"
@@ -130,7 +130,7 @@ export const Specialists = () => {
             <ChevronLeft size={22} />
           </button>
         </div>
-        <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 -right-2 lg:-right-6 z-20">
+        <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 right-0 lg:right-2 z-20">
           <button 
             onClick={nextSlide}
             className="p-3 rounded-full bg-white/90 text-primary shadow-lg border border-black/5 hover:bg-accent hover:text-white transition-all duration-300 hover:scale-110 focus:outline-none"

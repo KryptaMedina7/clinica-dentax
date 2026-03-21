@@ -8,7 +8,7 @@ import { ChevronDown } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-24 md:pt-20 md:pb-16">
       {/* Background Image / Gradient Placeholder */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/80 to-background/90 z-10" />
@@ -25,8 +25,8 @@ export const Hero = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl mx-auto"
         >
-          <div className="flex justify-center mb-10 md:mb-12">
-            <div className="relative w-36 h-36 md:w-48 md:h-48 bg-white/10 backdrop-blur-md rounded-[2rem] p-5 md:p-7 border border-white/20 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 duration-300">
+          <div className="flex justify-center mb-6 md:mb-12">
+            <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-white/10 backdrop-blur-md rounded-2xl md:rounded-[2rem] p-3 sm:p-4 md:p-6 border border-white/20 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 duration-300">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src="/doctores/logosolodentax.png" 
@@ -35,10 +35,10 @@ export const Hero = () => {
               />
             </div>
           </div>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 md:mb-6">
+          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-white tracking-tight leading-tight mb-3 md:mb-6">
             Odontología de Alto Estándar en Concepción
           </h1>
-          <p className="text-base md:text-xl text-white/80 font-light mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed text-balance px-4 md:px-0">
+          <p className="text-sm sm:text-base md:text-xl text-white/80 font-light mb-6 md:mb-10 max-w-2xl mx-auto leading-relaxed text-balance px-4 md:px-0">
             Atención clínica privada y especializada. Un espacio donde la excelencia médica, la precisión y la confianza convergen para transformar su sonrisa.
           </p>
           

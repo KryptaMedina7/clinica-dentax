@@ -26,17 +26,16 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "glass py-4 shadow-sm" : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-3 md:py-4 shadow-sm" : "bg-transparent py-4 md:py-6"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#hero" className="flex items-center -ml-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img 
-            src="/doctores/logoclinicatexto.png" 
-            alt="Clínica Dentax Logo" 
-            className="h-16 md:h-20 w-auto object-contain"
+          <img
+            src="/doctores/logoclinicatexto.png"
+            alt="Clínica Dentax Logo"
+            className="h-10 sm:h-14 md:h-20 lg:h-24 w-auto object-contain"
           />
         </a>
 

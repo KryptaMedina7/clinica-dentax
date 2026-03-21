@@ -34,6 +34,7 @@ export const Hero = () => {
                 height={120} 
                 className="w-full h-full object-contain"
                 priority
+                unoptimized
               />
             </div>
           </div>

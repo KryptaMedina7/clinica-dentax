@@ -39,6 +39,7 @@ export const Navbar = () => {
             height={120} 
             className="h-12 md:h-16 w-auto object-contain"
             priority
+            unoptimized
           />
         </a>
 

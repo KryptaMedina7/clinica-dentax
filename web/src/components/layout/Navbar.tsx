@@ -36,7 +36,7 @@ export const Navbar = () => {
           <img 
             src="/doctores/logoclinicatexto.png" 
             alt="Clínica Dentax Logo" 
-            className="h-12 md:h-16 w-auto object-contain"
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </a>
 

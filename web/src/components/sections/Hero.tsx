@@ -25,13 +25,13 @@ export const Hero = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl mx-auto"
         >
-          <div className="flex justify-center mb-8 md:mb-10">
-            <div className="relative w-28 h-28 md:w-36 md:h-36 bg-white/10 backdrop-blur-md rounded-3xl p-4 md:p-5 border border-white/20 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 duration-300">
+          <div className="flex justify-center mb-10 md:mb-12">
+            <div className="relative w-36 h-36 md:w-48 md:h-48 bg-white/10 backdrop-blur-md rounded-[2rem] p-5 md:p-7 border border-white/20 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 duration-300">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src="/doctores/logosolodentax.png" 
                 alt="Dentax Isotipo" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain drop-shadow-lg"
               />
             </div>
           </div>

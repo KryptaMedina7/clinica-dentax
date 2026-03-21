@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
@@ -32,14 +32,11 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#hero" className="flex items-center -ml-2">
-          <Image 
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img 
             src="/doctores/logoclinicatexto.png" 
             alt="Clínica Dentax Logo" 
-            width={180} 
-            height={120} 
             className="h-12 md:h-16 w-auto object-contain"
-            priority
-            unoptimized
           />
         </a>
 

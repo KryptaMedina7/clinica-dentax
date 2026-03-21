@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 export const Footer = () => {
@@ -9,13 +9,11 @@ export const Footer = () => {
         {/* Brand */}
         <div className="col-span-1 md:col-span-1">
           <div className="mb-6 -ml-2">
-            <Image 
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
               src="/doctores/logoclinicatexto.png" 
               alt="Clínica Dentax Logo" 
-              width={200} 
-              height={133} 
               className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-              unoptimized
             />
           </div>
           <p className="text-white/70 text-sm leading-relaxed max-w-xs">

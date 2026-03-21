@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
 import { ChevronDown } from "lucide-react";
@@ -27,14 +27,11 @@ export const Hero = () => {
         >
           <div className="flex justify-center mb-8 md:mb-10">
             <div className="relative w-28 h-28 md:w-36 md:h-36 bg-white/10 backdrop-blur-md rounded-3xl p-4 md:p-5 border border-white/20 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 duration-300">
-              <Image 
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
                 src="/doctores/logosolodentax.png" 
                 alt="Dentax Isotipo" 
-                width={120} 
-                height={120} 
                 className="w-full h-full object-contain"
-                priority
-                unoptimized
               />
             </div>
           </div>

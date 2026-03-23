@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  output: "export", // Re-activamos la exportación estática para igualar como funcionaba en Netlify
   images: {
     unoptimized: true,
   },
